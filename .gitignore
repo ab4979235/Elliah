@@ -1,0 +1,44 @@
+# Archivos sensibles y de configuración
+.env
+.env.*  # por si usas .env.development, etc.
+
+# WordPress core (si estás usando imagen oficial y no código personalizado)
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+
+# Volúmenes y bases de datos montadas
+volumes/
+db_data/
+wp_data/
+
+# Archivos temporales
+*.log
+*.sql
+*.sqlite
+*.pid
+*.gz
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Node/npm si usas herramientas frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
